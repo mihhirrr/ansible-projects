@@ -196,57 +196,6 @@ Each playbook and role can be customized by:
 
 ---
 
-## 📖 Learning Resources
-
-- [Ansible Documentation](https://docs.ansible.com/)
-- [Ansible Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
-- [AWS Ansible Documentation](https://docs.ansible.com/ansible/latest/collections/amazon/aws/)
-
----
-
-## ⚠️ Security Considerations
-
-- **Never commit SSH private keys** - Use .gitignore
-- **Use Ansible Vault** for sensitive data (passwords, API keys)
-- **Implement least privilege** - Only grant necessary permissions
-- **Regularly update** - Keep Ansible and dependencies current
-- **Audit playbooks** - Review for security best practices
-
-Example with Ansible Vault:
-```bash
-# Create encrypted variable file
-ansible-vault create secret.yml
-
-# Run playbook with vault password
-ansible-playbook playbook.yml --ask-vault-pass
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-1. Test playbooks thoroughly before submitting
-2. Follow Ansible best practices
-3. Document any new roles or playbooks
-4. Update this README with significant changes
-
----
-
 ## 📄 License
 
 Each subproject may have its own license. Check individual directories for LICENSE files.
-
----
-
-## 📧 Support
-
-For issues, questions, or suggestions, please open an issue in the repository.
-
----
-
-## 🔗 Related Links
-
-- Repository structure based on Ansible best practices
-- Integrated with AWS EC2 management
-- Docker and Nginx automation for rapid deployment

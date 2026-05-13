@@ -2,7 +2,7 @@
 
 A collection of Ansible playbooks and roles for infrastructure automation, configuration management, and cloud deployment.
 
-## 📋 Overview
+## Overview
 
 This repository contains various Ansible projects for automating:
 - Container deployment with Docker
@@ -11,7 +11,7 @@ This repository contains various Ansible projects for automating:
 
 Each project is self-contained with its own playbooks, roles, and inventory configuration.
 
-## 📁 Directory Structure
+## Directory Structure
 
 ### [docker-ansible/](docker-ansible/)
 Automates Docker installation and configuration on target hosts.
@@ -87,7 +87,7 @@ ansible-playbook -i inventory uninstall.yml
 
 ---
 
-## 🚀 Prerequisites
+## Prerequisites
 
 - **Ansible 2.9+** - Core automation tool
 - **Python 3.6+** - Required by Ansible
@@ -109,7 +109,7 @@ pip install boto3 botocore
 
 ---
 
-## 📝 Configuration
+## Configuration
 
 ### Inventory Setup
 
@@ -134,7 +134,7 @@ chmod 644 ~/.ssh/id_rsa.pub
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Example 1: Deploy Docker to multiple hosts
 ```bash
@@ -156,7 +156,7 @@ ansible-playbook ec2-play.yaml --tags "ec2-start"
 
 ---
 
-## 🔧 Common Ansible Commands
+## Common Ansible Commands
 
 ```bash
 # Check connectivity to all hosts
@@ -177,7 +177,7 @@ ansible-playbook playbook.yml -e "var1=value1 var2=value2"
 
 ---
 
-## 📚 Project Dependencies
+## Project Dependencies
 
 - **docker-ansible**: Requires `bsmeding.docker` role (can be installed via Ansible Galaxy)
 - **ec2-manage**: Requires boto3 and AWS credentials
@@ -185,7 +185,7 @@ ansible-playbook playbook.yml -e "var1=value1 var2=value2"
 
 ---
 
-## 🛠️ Customization
+## Customization
 
 Each playbook and role can be customized by:
 
@@ -193,9 +193,3 @@ Each playbook and role can be customized by:
 2. **Updating variables** - Edit group_vars or host_vars files
 3. **Adjusting roles** - Modify role tasks, handlers, and defaults
 4. **Creating new roles** - Extend playbooks with custom roles
-
----
-
-## 📄 License
-
-Each subproject may have its own license. Check individual directories for LICENSE files.

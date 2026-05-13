@@ -1,0 +1,10 @@
+---
+- name: Start an Ec2 instance using its instance ID
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+#    - ec2-start
+#    - ec2-stop
+    - ec2-reboot

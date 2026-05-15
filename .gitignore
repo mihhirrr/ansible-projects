@@ -1,1 +1,3 @@
+.gitignore
 ansible-examples
+ec2-manage/vault.pass

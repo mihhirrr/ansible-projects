@@ -1,0 +1,8 @@
+---
+# tasks file for roles/ec2-terminate
+#
+- name: Start an EC2 instance using instance ID
+  amazon.aws.ec2_instance:
+    state: absent
+    instance_ids:
+      - "{{ ec2_instance_id }}"

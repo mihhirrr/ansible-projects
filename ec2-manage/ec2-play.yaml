@@ -5,6 +5,9 @@
   gather_facts: false
 
   roles:
+#    - ec2-create
+#    - ec2-terminate
+
 #    - ec2-start
 #    - ec2-stop
-    - ec2-reboot
+#    - ec2-reboot

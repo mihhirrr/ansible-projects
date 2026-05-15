@@ -1,0 +1,13 @@
+---
+# tasks file for roles/ec2-create
+
+- name: start an instance with a public IP address
+  amazon.aws.ec2_instance:
+    name: "public-compute-instance"
+    key_name: "master-node01"
+    vpc_subnet_id: subnet-07a800e63c7c140ef
+    instance_type: t2.micro
+    security_group: sg-01d615d3d41393121
+    network_interfaces:
+      - assign_public_ip: true
+    image_id: ami-091138d0f0d41ff90
